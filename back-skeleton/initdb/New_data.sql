@@ -1,0 +1,9 @@
+INSERT INTO users (id, username) VALUES (1, 'Test1');
+INSERT INTO users (id, username) VALUES (2, 'Test2');
+INSERT INTO users (id, username) VALUES (3, 'Test3');
+INSERT INTO users (id, username) VALUES (4, 'Test4');
+INSERT INTO users (id, username) VALUES (5, 'Test5');
+INSERT INTO users (id, username) VALUES (6, 'Test6');
+INSERT INTO users (id, username) VALUES (7, 'Test7');
+INSERT INTO users (id, username) VALUES (8, 'Test8');
+INSERT INTO users (id, username) VALUES (9, 'Test9');
