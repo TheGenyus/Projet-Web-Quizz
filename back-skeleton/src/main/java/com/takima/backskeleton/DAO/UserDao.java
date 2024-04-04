@@ -1,6 +1,5 @@
 package com.takima.backskeleton.DAO;
 
-import com.takima.backskeleton.models.Student;
 import com.takima.backskeleton.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -10,5 +9,4 @@ import java.util.List;
 
 @Repository
 public interface UserDao extends JpaRepository<User, Long> {
-    List<User> findAll();
 }

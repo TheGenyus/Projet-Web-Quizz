@@ -58,8 +58,4 @@ public class UserService {
         }
         userDao.save(user);
     }
-
-    /*public List<Student> searchByMajorAndCourse(int majorId, int courseId) {
-        return studentDao.findByMajorIdAndCourseId(majorId, courseId);
-    }*/
 }
