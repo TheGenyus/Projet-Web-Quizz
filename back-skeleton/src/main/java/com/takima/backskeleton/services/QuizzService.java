@@ -40,7 +40,7 @@ public class QuizzService {
         try {
             quizz = QuizzMapper.fromDto(quizzDto, null);
         } catch (IOException e) {
-            throw new RuntimeException("Error with User image", e);
+            throw new RuntimeException("Error with Quizz image", e);
         }
 
         quizzDao.save(quizz);
