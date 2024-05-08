@@ -4,6 +4,8 @@ import com.takima.backskeleton.DAO.QuizzDao;
 import com.takima.backskeleton.DTO.QuizzDto;
 import com.takima.backskeleton.DTO.QuizzMapper;
 import com.takima.backskeleton.models.Quizz;
+import com.takima.backskeleton.models.Question;
+import com.takima.backskeleton.models.Student;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -57,5 +59,9 @@ public class QuizzService {
             throw new RuntimeException("Error with User image", e);
         }
         quizzDao.save(quizz);
+    }
+
+    public List<Question> getQuestionsOfQuizz(Long id) {
+        return quizzDao.getAllQuestionsFromQuizz(id);
     }
 }
