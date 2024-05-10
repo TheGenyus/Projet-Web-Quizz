@@ -5,7 +5,6 @@ import com.takima.backskeleton.DTO.QuizzDto;
 import com.takima.backskeleton.DTO.QuizzMapper;
 import com.takima.backskeleton.models.Quizz;
 import com.takima.backskeleton.models.Question;
-import com.takima.backskeleton.models.Student;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

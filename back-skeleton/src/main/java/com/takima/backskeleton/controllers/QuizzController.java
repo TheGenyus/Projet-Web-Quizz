@@ -3,7 +3,6 @@ package com.takima.backskeleton.controllers;
 import com.takima.backskeleton.DTO.QuizzDto;
 import com.takima.backskeleton.models.Question;
 import com.takima.backskeleton.models.Quizz;
-import com.takima.backskeleton.models.Student;
 import com.takima.backskeleton.services.QuizzService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
