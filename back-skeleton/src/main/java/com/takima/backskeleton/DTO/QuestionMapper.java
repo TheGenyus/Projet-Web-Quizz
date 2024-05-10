@@ -10,6 +10,7 @@ public class QuestionMapper {
                 .id(id)
                 .quiz_id(dto.getQuiz_id())
                 .texte(dto.getTexte())
+                .reponses(dto.getReponses())
                 .build();
     }
 
@@ -17,6 +18,7 @@ public class QuestionMapper {
         return QuestionDto.builder()
                 .quiz_id(question.getQuizz())
                 .texte(question.getTexte())
+                .reponses(question.getReponses())
                 .build();
     }
 }

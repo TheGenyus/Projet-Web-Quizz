@@ -2,6 +2,7 @@ package com.takima.backskeleton.controllers;
 
 import com.takima.backskeleton.DTO.QuestionDto;
 import com.takima.backskeleton.models.Question;
+import com.takima.backskeleton.models.Reponse;
 import com.takima.backskeleton.services.QuestionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
@@ -37,5 +38,10 @@ public class QuestionController {
     @PostMapping("/{id}")
     public void updateQuestion(@RequestBody QuestionDto questionDto, @PathVariable Long id) {
         questionService.updateQuestion(questionDto, id);
+    }
+
+    @GetMapping("/{id}/reponses")
+    public List<Reponse> getReponsesOfQuestion(@PathVariable Long id) {
+        return questionService.getReponsesOfQuestion(id);
     }
 }

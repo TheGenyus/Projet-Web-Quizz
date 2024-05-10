@@ -4,6 +4,7 @@ import com.takima.backskeleton.DAO.QuestionDao;
 import com.takima.backskeleton.DTO.QuestionDto;
 import com.takima.backskeleton.DTO.QuestionMapper;
 import com.takima.backskeleton.models.Question;
+import com.takima.backskeleton.models.Reponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -57,5 +58,9 @@ public class QuestionService {
             throw new RuntimeException("Error with Question image", e);
         }
         questionDao.save(question);
+    }
+
+    public List<Reponse> getReponsesOfQuestion(Long id) {
+        return questionDao.getAllReponsesFromQuestion(id);
     }
 }
