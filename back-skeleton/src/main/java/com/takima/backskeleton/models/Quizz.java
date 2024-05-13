@@ -7,7 +7,7 @@ import lombok.Getter;
 import java.util.List;
 
 @Entity
-@Table(name = "quizzs")
+@Table(name = "quizs")
 @Getter
 public class Quizz {
     @Id

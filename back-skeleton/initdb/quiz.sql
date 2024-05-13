@@ -1,3 +1,5 @@
+DROP TABLE Quiz,Question,Reponse;
+
 CREATE TABLE Quiz (
                       quiz_id INT PRIMARY KEY,
                       titre_quiz VARCHAR(255),
